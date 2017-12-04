@@ -1,0 +1,41 @@
+{
+  "name": "binary-cellular-automaton",
+  "version": "0.1.0",
+  "description": "A web app used to generate binary cellular automaton given a rule and initial states.",
+  "scripts": {
+    "favicon": "node favicon.js && echo 'Now copy contents of favicon.html into your HTML files.'"
+  },
+  "author": "Kenneth Lim <limzy.kenneth@gmail.com> (http://designerken.be)",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "browserify": "~13.0.1",
+    "browserify-shim": "~3.8.9",
+    "favicons": "^4.7.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-favicons": "^2.2.6",
+    "gulp-less": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-surge": "^0.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "underscore": "global:_",
+    "backbone": "global:Backbone"
+  }
+}
